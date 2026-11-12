@@ -1,0 +1,26 @@
+  o3 2023: 34 pairs
+  o3 2024: 35 pairs
+  o3 2025: 35 pairs
+  o3 2026: 34 pairs
+  pm10 2023: 4 pairs
+  pm10 2024: 6 pairs
+  pm10 2025: 5 pairs
+  pm10 2026: 4 pairs
+  pm25 2023: 52 pairs
+  pm25 2024: 41 pairs
+  pm25 2025: 39 pairs
+  pm25 2026: 34 pairs
+
+=== paired difference in units of the reporting increment ===
+                           pairs  sites   step   level  sd_steps  p95_steps  sd_abs    h_0    h_1  h_ge2  limited_by
+variable family                                                                                                     
+o3       UV photometric      138     35  0.001   0.034     0.710      1.500   0.001  0.476  0.413  0.050  resolution
+pm10     Beta attenuation      6      2  1.000  35.607     6.503      9.500   6.503  0.099  0.199  0.702  instrument
+         T640 optical          9      4  0.100  20.230    19.198     44.101   1.920  0.026  0.052  0.918  instrument
+         TEOM/R&P              4      1  1.000  26.603     2.572      3.500   2.572  0.420  0.399  0.197  instrument
+pm25     Beta attenuation     55     15  0.100   9.181    28.320     57.001   3.156  0.022  0.030  0.949  instrument
+         SHARP                16      4  0.100   7.345    19.083     33.001   1.908  0.043  0.078  0.877  instrument
+         T640 optical         91     24  0.100   8.467     6.161     13.001   0.616  0.107  0.218  0.679  instrument
+         TEOM FDMS             4      1  0.100   9.722    24.772     56.001   2.477  0.017  0.033  0.950  instrument
+
+-> ../Results_Collocated/resolution_limit.parquet

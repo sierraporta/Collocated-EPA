@@ -1,0 +1,50 @@
+  o3 2023: 34 pairs
+  o3 2024: 35 pairs
+  o3 2025: 35 pairs
+  o3 2026: 34 pairs
+  pm10 2023: 4 pairs
+  pm10 2024: 6 pairs
+  pm10 2025: 5 pairs
+  pm10 2026: 4 pairs
+  pm25 2023: 52 pairs
+  pm25 2024: 41 pairs
+  pm25 2025: 39 pairs
+  pm25 2026: 34 pairs
+
+category: precision  (SLAMS only)
+
+=== hourly vs daily CV, BY INSTRUMENT FAMILY ===
+
+o3   floor None (no floor)
+                pairs  sites  level   cv_h   cv_d  ratio   ties
+family                                                         
+UV photometric    136     35  0.034  3.553  1.071  3.012  0.469
+
+pm10   floor 3.0 (40 CFR 58 App. A 4(c)(4))
+                  pairs  sites   level    cv_h   cv_d  ratio   ties
+family                                                             
+Beta attenuation      6      2  35.607  15.991  6.267  2.407  0.099
+T640 optical          9      4  20.230   5.726  3.165  2.087  0.026
+TEOM/R&P              4      1  26.603   7.654  3.265  2.379  0.420
+
+pm25   floor 2.0 (40 CFR 58 App. A 4(c)(5))
+                  pairs  sites  level    cv_h    cv_d  ratio   ties
+family                                                             
+Beta attenuation     53     15  9.181  29.456  13.239  2.053  0.022
+SHARP                16      4  7.345  16.664  12.741  1.326  0.043
+T640 optical         91     24  8.467   3.718   3.047  1.135  0.107
+TEOM FDMS             4      1  9.722  21.874  13.201  1.657  0.017
+
+'ties' is the fraction of hours in which both monitors report the same value.
+For errors independent between hours the hourly/daily ratio would be 4.90.
+
+=== PM2.5: sensitivity to estimator and floor (family medians, %) ===
+                  cv_ub_floor0  cv_ub_floor2  cv_ub_floor5  cv_plain  cv_mad  median_abs_d
+family                                                                                    
+Beta attenuation         44.97         29.46         20.59     29.56   25.19         25.00
+SHARP                    22.08         16.66         13.67     16.67   12.99         12.79
+T640 optical              3.73          3.72          3.57      4.73    2.80          3.92
+TEOM FDMS                32.07         21.87         16.47     25.89   18.71         22.02
+rank correlation across pairs, CV_ub vs plain CV: 0.965
+
+-> ../Results_Collocated

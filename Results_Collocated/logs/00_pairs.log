@@ -1,0 +1,81 @@
+pairs with both POCs above 2000 h: 1826
+  with a method code for both: 968
+  with a change of method within the year in either: 1307
+
+=== monitor types of the pair ===
+SLAMS + SLAMS              847
+INDUSTRIAL + INDUSTRIAL    336
+nan + nan                  254
+SPM + SPM                  205
+SLAMS + SPM                 74
+OTHER + OTHER               41
+TRIBAL + TRIBAL             33
+OTHER + SLAMS               12
+NON-EPA FEDERAL + SPM        8
+EPA + NON-EPA FEDERAL        4
+
+=== PRECISION     (identical code: two units of the same instrument): 293 pairs, 81 sites ===
+          pairs  sites  years  h_min_median
+variable                                   
+pm25        157     45      4        8276.0
+o3          116     35      4        5694.5
+pm10         20      7      4        7890.0
+
+=== REPROCESSING  (same designation, different code): 368 pairs, 313 sites ===
+          pairs  sites  years  h_min_median
+variable                                   
+pm25        368    313      3        4803.0
+
+=== COMPARABILITY (different designation: different instruments): 134 pairs, 38 sites ===
+          pairs  sites  years  h_min_median
+variable                                   
+pm25         69     20      4        6577.0
+no2          42     16      4        7609.5
+pm10         11     11      3        3665.0
+o3            8      2      4        7344.0
+co            4      2      3        7202.5
+
+=== unclassified (designation missing for a code): 52 pairs, 24 sites ===
+          pairs  sites  years  h_min_median
+variable                                   
+temp         41     19      4        8543.0
+pmc           5      2      3        8539.0
+wspd          4      1      4        8313.0
+pm25n         2      2      2        2391.5
+
+=== non-regulatory (at least one monitor is not SLAMS): 979 pairs, 155 sites ===
+          pairs  sites  years  h_min_median
+variable                                   
+temp        277     74      4        8616.0
+wdir        254      6      4        4210.0
+wspd        250      5      4        4168.5
+pm25        147     73      4        5427.0
+pm25n        23      6      4        8084.0
+o3           13      4      4        6041.0
+pm10          8      4      4        3958.5
+rh            4      1      4        8506.0
+pmc           3      2      2        3576.0
+
+=== operated by the same agency (PQAO), SLAMS pairs ===
+same_pqao
+True     829
+False     18
+
+=== representativeness: largest deviations from the network ===
+variable        attribute         level  n_network  n_replicate  p_network  p_replicate  difference
+    pm10      noaa_region     Northeast         33            9      0.067        0.500       0.433
+      o3      noaa_region   Ohio Valley        211           22      0.165        0.595       0.430
+     no2      noaa_region     Northeast         74            8      0.153        0.500       0.347
+      o3      noaa_region Upper Midwest         92           12      0.072        0.324       0.252
+    pm10         Land Use    COMMERCIAL        128            8      0.261        0.444       0.184
+     no2         Land Use   RESIDENTIAL        187            9      0.387        0.562       0.175
+      o3         Land Use  AGRICULTURAL        237           13      0.185        0.351       0.166
+     no2 Location Setting      SUBURBAN        175            8      0.362        0.500       0.138
+      o3 Location Setting         RURAL        564           21      0.441        0.568       0.127
+      o3 Location Setting      SUBURBAN        504           10      0.394        0.270      -0.124
+      o3         Land Use   RESIDENTIAL        494           18      0.386        0.486       0.100
+     no2         Land Use    COMMERCIAL        139            6      0.288        0.375       0.087
+    pm25      noaa_region     Northeast        173           89      0.179        0.255       0.076
+    pm25      noaa_region          West        137           27      0.141        0.077      -0.064
+
+-> ../Results_Collocated

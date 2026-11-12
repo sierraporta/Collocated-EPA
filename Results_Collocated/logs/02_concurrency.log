@@ -1,0 +1,45 @@
+  no2 2023: 24 columns
+  no2 2024: 29 columns
+  no2 2025: 30 columns
+  no2 2026: 18 columns
+  o3 2023: 78 columns
+  o3 2024: 81 columns
+  o3 2025: 82 columns
+  o3 2026: 78 columns
+  pm10 2023: 32 columns
+  pm10 2024: 30 columns
+  pm10 2025: 35 columns
+  pm10 2026: 20 columns
+  pm25 2023: 858 columns
+  pm25 2024: 503 columns
+  pm25 2025: 487 columns
+  pm25 2026: 373 columns
+
+pairs with 500 or more concurrent hours: 987
+
+=== concurrent hours and replicate diagnostic, by category ===
+               pairs  sites  conc_hours_median  r_median   r_p05   r_max  disjoint_median
+arm                                                                                      
+comparability    142     39             6608.0    0.9745  0.6931  0.9995           0.0774
+precision        376     91             5844.0    0.9964  0.7992  0.9999           0.0154
+reprocessing     469    376             4843.0    0.9990  0.9967  1.0000           0.4198
+
+=== pairs that are practically deterministic (r > 0.9999) ===
+arm
+comparability     0 of 142
+precision         0 of 376
+reprocessing     20 of 469
+
+=== pairs with both monitors SLAMS ===
+                        pairs  sites  conc_hours_median  r_median   r_p05  disjoint_median
+arm           variable                                                                    
+comparability no2          41     14             7539.0    0.9934  0.9127           0.0299
+              o3            8      2             7266.0    0.9975  0.9808           0.0279
+              pm10          3      3              830.0    0.8930  0.7563           0.9036
+              pm25         65     17             6968.0    0.9415  0.6967           0.0986
+precision     o3          138     35             5594.5    0.9987  0.9918           0.0081
+              pm10         19      7             7729.0    0.9897  0.9806           0.0523
+              pm25        166     44             8114.0    0.9868  0.7772           0.0172
+reprocessing  pm25        378    314             4775.5    0.9992  0.9967           0.4354
+
+-> ../Results_Collocated/concurrency.parquet

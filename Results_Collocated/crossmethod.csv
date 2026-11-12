@@ -1,0 +1,4 @@
+subset,pair_years,sites,cv_hourly,cv_daily,level,n_days
+"network T640-BAM, both SLAMS",14.000,5,28.621,14.304,7.920,
+"network T640-BAM, all monitor types",22.000,8,28.621,14.043,8.212,
+"Sarajevo T640-BAM (Hagler et al. 2022), daily",,1,,12.709,20.358,436.000

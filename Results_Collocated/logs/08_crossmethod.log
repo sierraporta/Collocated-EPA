@@ -1,0 +1,6 @@
+                                       subset  pair_years  sites  cv_hourly  cv_daily  level  n_days
+                 network T640-BAM, both SLAMS        14.0      5      28.62     14.30   7.92     NaN
+          network T640-BAM, all monitor types        22.0      8      28.62     14.04   8.21     NaN
+Sarajevo T640-BAM (Hagler et al. 2022), daily         NaN      1        NaN     12.71  20.36   436.0
+
+-> ../Results_Collocated/crossmethod.csv
