@@ -1,0 +1,5 @@
+Source: Hagler, G. S. W., Hanley, T., Hassett-Sipple, B., Vanderpool, R. W. (2022).
+Sarajevo PM2.5 Data from Collocated FEM Monitors. U.S. EPA data release.
+doi:10.23719/1522400 (https://pasteur.epa.gov/uploads/10.23719/1522400/)
+File: Fig4-daily.csv, renamed hagler_sarajevo_daily.csv; retrieved 2026-10-28.
+Content: 475 daily means, 2018-05-15 to 2019-08-31, T640 and BAM-1020 (ug/m3).
